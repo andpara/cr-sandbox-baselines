@@ -7,13 +7,12 @@ hosts:
       mgmt_user: windows
     flavor: c4_r8_d60
 
-
 routers:
   - name: router
     base_box:
       image: debian-12-x86_64
       mgmt_user: debian
-    flavor: standard.small
+    flavor: c1_r2_d10
 
 networks:
   - name: network
