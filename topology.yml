@@ -1,4 +1,4 @@
-name: sandbox-demo
+name: win-srv-25-sandbox-demo
 
 hosts:
   - name: win-srv-2025-desktop
