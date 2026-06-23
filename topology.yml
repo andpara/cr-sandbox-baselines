@@ -1,17 +1,19 @@
-name: kali-2026-sandbox-demo
+name: debian-12-sandbox-demo
 
 hosts:
-  - name: kali-desktop
+  - name: debian-desktop
     base_box: 
-      image: kali-2026-x86_64
+      image: debian-12-x86_64
       mgmt_user: debian
-    flavor: c4_r4_d25
+      mgmt_protocol: ssh
+    flavor: c1_r2_d10
 
 routers:
   - name: router
     base_box:
       image: debian-12-x86_64
       mgmt_user: debian
+      mgmt_protocol: ssh
     flavor: c1_r2_d10
 
 networks:
@@ -23,7 +25,7 @@ wan:
   cidr: 100.100.100.0/24
 
 net_mappings:
-    - host: kali-desktop
+    - host: debian-desktop
       network: network
       ip: 10.0.0.10
 

@@ -1,5 +1,5 @@
 - name: Initialize Sandbox Host
-  hosts: kali-desktop
+  hosts: debian-desktop
   gather_facts: yes
   become: yes
   roles:
@@ -7,8 +7,7 @@
       user_access_username: user
       user_access_password: Password123
       user_access_sudo: True
-      
   tasks:
     - name: Print Msg
       debug:
-        msg: "kali-2026-sandbox-demo"
+        msg: "debian-12-sandbox-demo"
