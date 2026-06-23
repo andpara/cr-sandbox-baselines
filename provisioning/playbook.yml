@@ -1,4 +1,4 @@
-- name: Sandbox Setup
+- name: Initialize Sandbox Host
   hosts: win-srv-2025-desktop
   gather_facts: yes
   
