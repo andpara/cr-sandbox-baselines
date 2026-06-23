@@ -23,7 +23,7 @@ wan:
   cidr: 100.100.100.0/24
 
 net_mappings:
-    - host: win11-desktop
+    - host: win-srv-2025-desktop
       network: network
       ip: 10.0.0.10
 
