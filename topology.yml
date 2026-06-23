@@ -1,4 +1,4 @@
-name: sandbox-demo
+name: win11-sandbox-demo
 
 hosts:
   - name: win11-desktop
