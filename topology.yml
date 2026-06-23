@@ -1,11 +1,11 @@
-name: win11-sandbox-demo
+name: kali-2026-sandbox-demo
 
 hosts:
-  - name: win11-desktop
-    base_box:
-      image: windows-11-x86_64
-      mgmt_user: windows
-    flavor: c4_r5_d80
+  - name: kali-desktop
+    base_box: 
+      image: kali-2026-x86_64
+      mgmt_user: debian
+    flavor: c4_r4_d25
 
 routers:
   - name: router
@@ -23,7 +23,7 @@ wan:
   cidr: 100.100.100.0/24
 
 net_mappings:
-    - host: win11-desktop
+    - host: kali-desktop
       network: network
       ip: 10.0.0.10
 
@@ -33,3 +33,4 @@ router_mappings:
       ip: 10.0.0.1
 
 groups: []
+
