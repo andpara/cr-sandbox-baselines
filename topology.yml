@@ -1,11 +1,12 @@
-name: windows-10-testing
+name: windows-server-2019-testing
 
 hosts:
-  - name: win10-desktop
+  - name: win-srv-19-desktop
     base_box:
-      image: windows-10-x86_64
+      image: windows-server-2019-x86_64
       mgmt_user: windows
     flavor: c4_r8_d60
+
 
 routers:
   - name: router
@@ -20,10 +21,10 @@ networks:
 
 wan:
   name: internet-connection
-  cidr: 100.100.100.0/24
+  cidr: 10.10.10.0/24
 
 net_mappings:
-    - host: win10-desktop
+    - host: win-srv-19-desktop
       network: network
       ip: 10.0.0.10
 
@@ -33,4 +34,3 @@ router_mappings:
       ip: 10.0.0.1
 
 groups: []
-
