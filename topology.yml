@@ -1,13 +1,11 @@
-name: windows-11-testing
+name: windows-10-testing
 
 hosts:
-  - name: win11-desktop
+  - name: win10-desktop
     base_box:
-      image: windows-11-x86_64
+      image: windows-10-x86_64
       mgmt_user: windows
-      mng_protocol: ssh
-    flavor: c4_r8_d50
-
+    flavor: c4_r8_d60
 
 routers:
   - name: router
@@ -25,7 +23,7 @@ wan:
   cidr: 100.100.100.0/24
 
 net_mappings:
-    - host: win11-desktop
+    - host: win10-desktop
       network: network
       ip: 10.0.0.10
 
@@ -35,3 +33,4 @@ router_mappings:
       ip: 10.0.0.1
 
 groups: []
+

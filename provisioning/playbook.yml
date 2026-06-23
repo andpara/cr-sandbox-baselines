@@ -1,5 +1,5 @@
 - name: Hello world
-  hosts: win11-desktop
+  hosts: win10-desktop
   gather_facts: yes
   
   roles:
