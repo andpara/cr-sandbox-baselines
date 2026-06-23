@@ -1,4 +1,4 @@
-- name: Hello world
+- name: Initialize Sandbox Host
   hosts: win-srv-19-desktop
   gather_facts: yes
   
@@ -10,6 +10,6 @@
       user_access_admin: True
       
   tasks:
-    - name: Print hello world
+    - name: Print Msg
       debug:
-        msg: "Hello World"
+        msg: "win-srv-2019-sandbox-demo"
