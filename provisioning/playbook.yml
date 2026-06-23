@@ -1,5 +1,5 @@
-- name: Hello world
-  hosts: win-srv-19-desktop
+- name: Sandbox Setup
+  hosts: win-srv-2025-desktop
   gather_facts: yes
   
   roles:
@@ -10,6 +10,6 @@
       user_access_admin: True
       
   tasks:
-    - name: Print hello world
+    - name: Print Msg
       debug:
-        msg: "Hello World"
+        msg: "win-srv-2025-sandbox-demo"

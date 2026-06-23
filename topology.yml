@@ -1,11 +1,12 @@
-name: windows-server-2019-testing
+name: win-srv-2025-sandbox-demo
 
 hosts:
-  - name: win-srv-19-desktop
+  - name: win-srv-2025-desktop
     base_box:
-      image: windows-server-2019-x86_64
+      image: windows-server-2025-x86_64
       mgmt_user: windows
-    flavor: c4_r8_d60
+      mng_protocol: ssh
+    flavor: c4_r8_d50
 
 
 routers:
@@ -21,10 +22,10 @@ networks:
 
 wan:
   name: internet-connection
-  cidr: 10.10.10.0/24
+  cidr: 100.100.100.0/24
 
 net_mappings:
-    - host: win-srv-19-desktop
+    - host: win11-desktop
       network: network
       ip: 10.0.0.10
 
