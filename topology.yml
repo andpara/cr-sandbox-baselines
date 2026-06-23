@@ -1,4 +1,4 @@
-name: windows-server-2019-testing
+name: win-srv-2019-sandbox-demo
 
 hosts:
   - name: win-srv-19-desktop
