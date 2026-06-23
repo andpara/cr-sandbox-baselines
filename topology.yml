@@ -1,4 +1,4 @@
-name: win-10-sandbox-demo
+name: sandbox-demo
 
 hosts:
   - name: win10-desktop
