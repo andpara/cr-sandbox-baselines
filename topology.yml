@@ -1,4 +1,4 @@
-name: win-srv-2019-sandbox-demo
+name: sandbox-demo
 
 hosts:
   - name: win-srv-19-desktop
