@@ -1,4 +1,4 @@
-name: debian-12-sandbox-demo
+name: sandbox-baseline
 
 hosts:
   - name: debian-desktop
